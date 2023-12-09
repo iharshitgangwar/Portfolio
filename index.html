@@ -16,7 +16,7 @@
 
 
 <!-- <link rel="stylesheet" href="/css/swiper-bundle.min.css"> -->
-<link rel="stylesheet" type="text/css" href="style.css">
+<link id="theme_x" rel="stylesheet" type="text/css" href="style.css">
 
 
  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -63,11 +63,13 @@
 
 <section id="navbar-section">
 	<div class="top-spc"> </div>
+	
+
+
  <nav id="navbar" class="navbar">
+	
   <!-- Brand -->
   <a class="navbar-brand" href="#" ><h1><span>H</span>arshit Gangwar</h1></a>
-
-
 
   <!-- Navbar links -->
   <div class="nav_id" id="nav_id">
@@ -90,18 +92,48 @@
 			<li class="nav-item">
         <a href="#contact">CONTACTS</a>
       </li>
+	 
+
     </ul>
+	<div class="sidebar" id="sidebar"><i class="fa-solid fa-bars "></i></div>
+	
   </div>
 </nav>
+<div class="sidebar-mobile" id="sidebar-mobile">
+	
+
+	<ul class="sidebar-nav">
+		<li><div class="sidebar_off" id="sidebar_off"><i class="fa-solid fa-bars "></i></div></li>
+		<li class="nav-item">
+		  <a href="#header-section">HOME</a>
+		</li>
+		<li class="nav-item">
+		  <a href="#about">ABOUT</a>
+		</li>
+		<li class="nav-item">
+		  <a href="#projects">PROJECTS</a>
+		</li>
+		<li class="nav-item">
+		  <a href="#skills-section">SKILLS</a>
+		</li>
+			  <!-- <li class="nav-item">
+				  <a href="#services">SERVICES</a>
+			  </li> -->
+			  <li class="nav-item">
+		  <a href="#contact">CONTACTS</a>
+		</li>
+</div>
 </section>	
-
-
+<div class="theme-changer" id="theme-changer">
+	<input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+</div>
 
 <!-- First box -->
 <section id="header-section">
 </section>
 
 	<div class="landingPage">
+		<div class="shadow-effect"></div>
 		<div class="bg-image-hero"></div>
 		<div class="bg-text-hero">
 			<div class="wlcm-txt">
@@ -122,15 +154,17 @@
 <!-----------------about------------>
 
 <div id="about">
-	<div class="about-container"><div class="row">	
+	<div class="about-container">
+		<div class="row">	
 		
-		  <div class="col-md-6 txt">
-			<div class="col-md-6 .item-align-center"> 
+		
+			<div class="col-md-6 "> 
 				<div class="imgbrd">	
 					  <img src="img/mypic.jpg">
 					</div>
 				</div>	
-				<div class="col-md-6 ">
+				
+				<div class="col-md-6 txt ">
 		  <h2 class="intro-head">Hi, I am <span>Harshit Gangwar</span><hr class="hr-skills"/></h2>
 		  <p class="Para">
 			  I am a Computer Science graduate from AKTU University, Lucknow, with a strong focus on JavaScript development. 
@@ -178,14 +212,14 @@
 		<div class="skill-bar-percent">100%</div>
 	</div>
 </div>
-</div>
-		  </div></div>
+				</div>
+		 </div>
 		</div>
 	
 		
   </div>
  
-<div id="projects" class="padding-all">
+<div id="projects">
 	<hr class="sec-dev"/>
 
 <div class="project slider">
@@ -329,7 +363,7 @@
 </div>
 </div>
 <!---------------------------Services--------------------------------->
-<div id="skills-section" class="section-skill padding-all">
+<div id="skills-section" class="section-skill">
 	<hr class="sec-dev"/>
 	<div class="Skills-container" id="Skills">
 		<h2>Skills I have<hr class="hr-skills-row"/></h2>
@@ -434,21 +468,11 @@
 	</div>
 </div> -->
 <!-------------------Contact information--------------------------->
-<div id="contact" class="padding-all">
+<div id="contact">
 	
 	
 	
 <div class="container text-center">
-	<div class="row-1">
-		<div class="social-icons">
-			<ul>
-				<a href="https://www.linkedin.com/in/iharshitgangwar/" target="_blank" rel="noopener noreferrer"><li style="background-color:#4875b4;"><i class="fa fa-linkedin"></i></li></a>
-				<a href="https://twitter.com/IHarshitGangwar"><li style="background-color:#1baaea;"><i class="fa fa-twitter"></i></li></a>
-				<a href="https://github.com/iharshitgangwar"><li style="background-color:black;"><i class="fa fa-github"></i></li></a>
-				<a href="https://www.facebook.com/iharshitgangwar"><li style="background-color:#3b5998;"><i class="fa fa-facebook"></i></li></a>
-			</ul>
-	</div>
-	</div>
 <div class="row-2">
 	<h2>Contact Me</h2>
 	<div class="contact-box">
@@ -468,7 +492,17 @@
 	</div>
 	<div class="btn-contact">
 		<button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
-		<button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire me</button></div>
+		<button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire me</button>
+	</div>
+	<div class="social-icons">
+		<ul>
+			<a href="https://www.linkedin.com/in/iharshitgangwar/" target="_blank" rel="noopener noreferrer"><li style="color:#4875b4;"><i class="fa fa-linkedin"></i></li></a>
+			<a href="https://twitter.com/IHarshitGangwar"><li style="color:#1baaea;"><i class="fa fa-twitter"></i></li></a>
+			<a href="https://github.com/iharshitgangwar"><li style="background-color:black;"><i class="fa fa-github"></i></li></a>
+			<a href="https://www.facebook.com/iharshitgangwar"><li style="color:#3b5998;"><i class="fa fa-facebook"></i></li></a>
+		</ul>
+</div>
+		
 </div>
 </div>
 </div>
