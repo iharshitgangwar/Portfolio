@@ -20,7 +20,7 @@ const scroll = new LocomotiveScroll({
   smooth: true,
   direction: "vertical",
   reloadOnContextChange: false,
-  smoothMobile: true,
+  smoothMobile: false,
   lerp: 0.1,
   getSpeed: false,
   getDirection: false,
