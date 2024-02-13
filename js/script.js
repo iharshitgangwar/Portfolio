@@ -18,6 +18,27 @@
 const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
+  direction: "vertical",
+  reloadOnContextChange: false,
+  smoothMobile: true,
+  lerp: 0.1,
+  getSpeed: false,
+  getDirection: false,
+  getCache: false,
+  getOffset: false,
+  getLimit: false,
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+
+    if (target) {
+      scroll.scrollTo(target);
+    }
+  });
 });
 
 let x = document.getElementsByClassName("landingPage");
@@ -120,7 +141,7 @@ sideBar_off.addEventListener("click", () => {
 
 theme_select.addEventListener("click", () => {
   if (stylesheet_N.getAttribute("href") == "style.css") {
-    document.getElementById("theme_x").href = "xyz.css";
+    document.getElementById("theme_x").href = "dark_theme.css";
   } else {
     document.getElementById("theme_x").href = "style.css";
   }
